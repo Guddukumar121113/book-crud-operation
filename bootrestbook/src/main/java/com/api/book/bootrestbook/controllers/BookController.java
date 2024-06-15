@@ -30,7 +30,7 @@ public class BookController {
     public Book getBook(@PathVariable("id") int id) {
         return bookService.getBookById(id);
     }
-
+//  hrough post method we add book details in my dataabase
     @PostMapping("/books")
     public Book addBook(@RequestBody Book book) {
         Book b = this.bookService.addBook(book);
